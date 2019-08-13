@@ -17,3 +17,6 @@ To run tests against the **TEST** environment
 To run an example tests against **Google**
 
 `test:google`
+
+### Example Output
+![Test Output](testoutput.png)
