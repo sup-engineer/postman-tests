@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "3e5b1424-6854-4344-847f-336ad594e474",
+		"name": "Advisor Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Advisor",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6bfcf4a0-0e9d-4c7e-97f2-bbf286a9d3b3",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{advisor}}",
+					"protocol": "https",
+					"host": [
+						"{{advisor}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

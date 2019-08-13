@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "1ca0922b-5b1e-404f-b41b-8d991569b6a1",
+		"name": "Google Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET > Google",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c5f674d4-59b7-4454-b249-87c30a3b2c47",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "www.google.co.uk",
+					"host": [
+						"www",
+						"google",
+						"co",
+						"uk"
+					]
+				},
+				"description": "Just asserting that we get a 200 back from a Google request"
+			},
+			"response": []
+		}
+	]
+}

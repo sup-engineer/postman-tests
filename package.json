@@ -1,0 +1,24 @@
+{
+  "name": "postman-tests",
+  "version": "1.0.0",
+  "description": "Using Newman test runner to run postman collections",
+  "main": "index.js",
+  "scripts": {
+    "test:ci": "newman run ./AdvisorTests/AdvisorTests.postman_collection.json -e ./environments/DEVELOPMENT.postman_environment.json",
+    "test:test": "newman run ./AdvisorTests/AdvisorTests.postman_collection.json -e ./environments/TEST.postman_environment.json",
+    "test:google": "newman run ./google-tests/GoogleTests.postman_collection.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonyjoanes/postman-tests.git"
+  },
+  "author": "Tony Joanes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthonyjoanes/postman-tests/issues"
+  },
+  "homepage": "https://github.com/anthonyjoanes/postman-tests#readme",
+  "dependencies": {
+    "newman": "^4.5.3"
+  }
+}
