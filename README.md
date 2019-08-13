@@ -19,4 +19,4 @@ To run an example tests against **Google**
 `test:google`
 
 ### Example Output
-![Test Output](testoutput.png)
+![Test Output](testoutput.PNG)
