@@ -3,6 +3,7 @@
 ## Setup
 - Clone the repository
 - Run `npm install`
+- If working behind a proxy:- Set OS global env variable 'http_proxy'=<proxy address:port>
 
 ## Running Tests
 
